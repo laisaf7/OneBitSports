@@ -1,0 +1,57 @@
+@media (max-width: 1206px) {
+
+    .conteudo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1020px) {
+    .conteudo {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 714px) {
+    .main {
+        grid-template-areas: 
+    "banner banner"
+    "conteudo conteudo"
+    "conteudo conteudo"
+    "conteudo conteudo"
+    "barra-lateral barra-lateral";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    }
+
+    .barra-lateral {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 436px) {
+    .cabecalho, .rodape {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    .banner_titulo {
+        font-size: 25px;
+    }
+
+    .banner_paragrafo {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 386px) {
+
+    .barra-lateral{
+        padding: 30px 0 30px 0;
+    }
+    .barra_img {
+        width: 200px;
+        height: 130px;
+    }
+}

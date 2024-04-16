@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+    font-size: 20px;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+} 
+
+.cabecalho, .rodape {
+    width: 100%;
+    min-height: 40px;
+    background-color: #292929;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 8px 15px;
+}
+
+.cabecalho_img_logo, .rodape_img_logo {
+    width: 180px;
+}
+
+.cabecalho_cta, .rodape_cta {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.cabecalho_cta_botao, .rodape_cta_botao {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 6px;
+    color: #ffffff;
+}
+
+.cabecalho_cta_botao {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
+
+.cabecalho_cta_botao:hover {
+    border-bottom: 2px solid #000;
+    transition: 0.4s;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "banner banner"
+    "conteudo barra-lateral";
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-area: banner;
+    margin: 15px;
+}
+
+.banner_titulo {
+    font-family: "Ubuntu", sans-serif;
+    padding: 20px 0 5px  0;
+    font-size: 26px;
+    text-align: center;
+}
+
+.banner_paragrafo {
+    text-align: center;
+}
+
+.conteudo {
+    display: grid;
+    grid-area: conteudo;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0 30px 40px 40px;
+}
+
+.conteudo_caixa {
+    width: 280px;
+    height: 380px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.conteudo_caixa:hover {
+    border-color: #292929;
+}
+
+.conteudo_img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.conteudo_titulo {
+    font-family: "Ubuntu", sans-serif;
+    padding: 6px;
+}
+
+.conteudo_descricao {
+    padding: 6px;
+    font-size: 18px;
+}
+
+.barra-lateral {
+    grid-area: barra-lateral;
+    background-color: #292929;
+    color: #ffffff;
+    padding: 16px;
+    margin: 5px 5px 30px 5px;
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 300px;
+    gap: 20px;
+}
+
+.conteudo_barra {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.conteudo_barra:hover {
+    border-color: #fff;
+}
+
+.barra_img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.barra-texto {
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    padding: 10px;
+}
